@@ -19,6 +19,16 @@ export const render = () => (
   <iframe src="https://threatmap.fortiguard.com" width="100%" height="100%" frameBorder="0"/>
 )
 
+/* 
+  Threat Maps: 
+// https://threatmap.fortiguard.com
+// https://threatmap.bitdefender.com
+// https://cybermap.kaspersky.com/widget
+// https://www.deteque.com/live-threat-map
+// https://www.fireeye.com/cyber-map/threat-map.html
+// https://threatbutt.com/map
+
+*/
 
 // const Gifs = () => (
 //   <div>
