@@ -15,14 +15,36 @@ export const className = `
   z-index:999999;
 `
 
-export const render = () => (
-  <iframe src={randomArrValue(bestThreadMaps)} width="100%" height="100%" frameBorder="0"/>
-)
+export const render = () => {
+  const youtubePlaylistUrl = randomArrValue(youtubeList) 
+  // perform the playllist validation here.
+  return (
+    <iframe src={youtubePlaylistUrl} width="100%" height="100%" frameBorder="0"/>
+  )
+}
 
 const randomArrValue = (arr) => 
   arr[
     Math.floor((Math.random() * arr.length))
   ];
+
+// const likedVideos = 'LLSCWFSK6rEm7Pg0yxD61pOA'
+const creedLoadscreens = 'PLZbIo_dYB77tFXtSy6nZjnRyiH_Hwqe_B'
+const assassinsCreedTrailers = 'PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr'
+const lofiAnimes = 'PLZbIo_dYB77tkPQCgwRMq9a_RRkq0UXZ3'
+const historyOfArchitectureTestWillFailLaterOn = 'PL7_CkZ72ky5P1aPgHTbLBZbcddN_48F44'
+const birds='PLOh2AUhKQzaNeE-vXiH1SMeJyTdRT84dr'
+const buildUrlPlaylist = (plist) => 
+  'https://www.youtube.com/embed/?list=' + plist + '&index=0&rel=0&autoplay=1'
+
+const youtubeList = [
+  buildUrlPlaylist(creedLoadscreens),
+  buildUrlPlaylist(assassinsCreedTrailers),
+  buildUrlPlaylist(lofiAnimes),
+  buildUrlPlaylist(historyOfArchitectureTestWillFailLaterOn),
+  buildUrlPlaylist(birds),
+]
+
 
 const bestThreadMaps = [
   'https://threatmap.fortiguard.com',
