@@ -16,10 +16,14 @@ export const className = `
 `
 
 export const render = () => {
-  const youtubePlaylistUrl = randomArrValue(youtubeList) 
+  const threatMapExperienceUrl = randomArrValue(bestThreadMaps) 
+
+  const youtubePlaylistExperienceUrl = randomArrValue(youtubeList) 
+  
   // perform the playllist validation here.
   return (
-    <iframe src={youtubePlaylistUrl} width="100%" height="100%" frameBorder="0"/>
+    <iframe src={youtubePlaylistExperienceUrl} width="100%" height="100%" frameBorder="0"/>
+    // <GifExperience/>
   )
 }
 
@@ -61,7 +65,7 @@ const threatMaps = [
   'https://threatbutt.com/map'
 ]
 
-const Gifs = () => (
+const GifExperience = () => (
   <div>
     <iframe src="https://giphy.com/embed/3jvujBL5wCSYM" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen />   
     <iframe src="https://giphy.com/embed/Yohz12bnBkqVW" width="480" height="255" frameBorder="0" class="giphy-embed" allowFullScreen />
