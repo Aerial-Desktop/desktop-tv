@@ -12,17 +12,36 @@ export const className = `
   margin:0;
   padding:0;
   overflow:hidden;
-  z-index:999999;
+  z-index:-999999;
 `
 
 export const render = () => {
+  // news related
+
+  // live news if online
+  const spacexLiveChecker = buildLiveChannelsUrl('UCtI0Hodo5o5dUb67FeUjDeA')
+  const podcastLiveChecker = buildLiveChannelsUrl('UCzQUP1qoWDoEbmsQxvdjxgQ')
+  const youtubeLiveNowTechnology = buildUrlPlaylist('PL57quI9usf_th5iJjjhXcRzlzibHUgYMA')
+  const youtubeLiveNowAnimals = buildUrlPlaylist('PLIFqWCuxNyoj8HAwNYOlqdDL52pNsbvKV')
+
+  // static news updated daily
+  const bbcTopStories = buildUrlPlaylist('PLS3XGZxi7cBVNadbxDqZCUgISvabEpu-g')
+  const espnMustSee = buildUrlPlaylist('PLn3nHXu50t5xa7-HYnJpzN5cxkLYgFP_V')
+
+  // entertainment/visuals
   const threatMapExperienceUrl = randomArrValue(bestThreadMaps) 
+  // const rickAndMortyUrl1 = 'https://www.adultswim.com/streams/rick-and-morty'
+  // const rickAndMortyUrl2 = 'https://www.youtube.com/embed/agANj7n4_6I'
 
   const youtubePlaylistExperienceUrl = randomArrValue(youtubeList) 
-  
+
+  // music
+  const youtubeChilledCowByVideo = buildLiveVideo('hHW1oY26kxQ')
+  const youtubeChilledCowByChannelId = buildLiveChannelsUrl('UCSJ4gkVC6NrvII8umztf0Ow')
+
   // perform the playllist validation here.
   return (
-    <iframe src={youtubePlaylistExperienceUrl} width="100%" height="100%" frameBorder="0"/>
+    <iframe src={youtubeChilledCowByVideo} width="100%" height="100%" frameBorder="0"/>
     // <GifExperience/>
   )
 }
@@ -38,8 +57,13 @@ const assassinsCreedTrailers = 'PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr'
 const lofiAnimes = 'PLZbIo_dYB77tkPQCgwRMq9a_RRkq0UXZ3'
 const historyOfArchitectureTestWillFailLaterOn = 'PL7_CkZ72ky5P1aPgHTbLBZbcddN_48F44'
 const birds='PLOh2AUhKQzaNeE-vXiH1SMeJyTdRT84dr'
-const buildUrlPlaylist = (plist) => 
-  'https://www.youtube.com/embed/?list=' + plist + '&index=0&rel=0&autoplay=1'
+
+const buildUrlPlaylist = (plist) =>
+  'https://www.youtube.com/embed/?list=' + plist + '&index=1&rel=0&autoplay=1'
+const buildLiveChannelsUrl = (channel) =>
+  'https://www.youtube.com/embed/live_stream?channel=' + channel + '&autoplay=1'
+const buildLiveVideo = (plist) =>
+  'https://www.youtube.com/embed/' + plist + '?index=1&rel=0&autoplay=1'
 
 const youtubeList = [
   buildUrlPlaylist(creedLoadscreens),
