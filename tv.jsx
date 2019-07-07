@@ -16,8 +16,13 @@ export const className = `
 `
 
 export const render = () => (
-  <iframe src={threatMaps[0]} width="100%" height="100%" frameBorder="0"/>
+  <iframe src={randomArrValue(threatMaps)} width="100%" height="100%" frameBorder="0"/>
 )
+
+const randomArrValue = (arr) => 
+  arr[
+    Math.floor((Math.random() * arr.length))
+  ];
 
 const threatMaps = [
   'https://threatmap.fortiguard.com',
