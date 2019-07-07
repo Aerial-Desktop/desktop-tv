@@ -1,4 +1,4 @@
-## Highlights for Phase 2 ( not currently built): 
+## Highlights for Phase 2 (not currently built): Supported on all versions of MacOS
 
 1 widget, 6 companion widgets
 

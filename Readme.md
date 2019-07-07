@@ -1,4 +1,4 @@
-## Desktop Tv (Mvp):
+## Desktop Tv (Mvp): Supported on all versions of MacOS
 
 1 widget, 5 video experiences for a television desktop background.
 
@@ -43,6 +43,6 @@
 ```
 ## note: 
 1) Experiences are currently changed by editing the widget.
-2) There is also a random option for experiences. Feel free to reach to [michael dimmitt](https://github.com/MichaelDimmitt) for more details or open an [issue on github](https://github.com/MichaelDimmitt/desktop-tv-public-facing-documentation/issues).
+2) There is also a random option for experiences. <br/>Feel free to reach to [michael dimmitt](https://github.com/MichaelDimmitt) for more details or open an [issue on github](https://github.com/MichaelDimmitt/desktop-tv-public-facing-documentation/issues).
 
 Things planned for release in the next phase can be found at [phase2.md](https://github.com/MichaelDimmitt/desktop-tv-public-facing-documentation/blob/master/phase2.md)
