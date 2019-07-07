@@ -2,6 +2,9 @@
 
 1 widget, 5 video experiences for a television desktop background.
 
+## Introduction/ Sales Pitch:
+Desktop TV is a video streaming application which turns your desktop background into a television.<br/>It provides you with interesting information/music and it stays out of your way so that you can work.
+
 ## Video Experiences: 
 1) Static News updated Daily: (very stable videos)
 ```
