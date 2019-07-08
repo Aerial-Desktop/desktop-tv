@@ -41,13 +41,20 @@ export const render = () => {
 
   // perform the playllist validation here.
   return (
-    // <RainingLetters/>
+    // <CodePen/>
     <iframe src={youtubeChilledCowByVideo} width="100%" height="100%" frameBorder="0"/>
     // <GifExperience/>
   )
 }
 
-const RainingLetters = () => <iframe style={{position:'absolute', top:'-62px'}} src={'https://codepen.io/yuanchuan/full/YoqWeR'} width="100%" height="120%" frameBorder="0"/>
+const CodePen = () => {
+  const hyperSpace = 'https://codepen.io/yuanchuan/full/dqrdow'
+  const enterTheMatrix = 'https://codepen.io/yuanchuan/full/YoqWeR'
+  const dnaSequence = 'https://codepen.io/yuanchuan/full/pBrMNQ'
+  const trippy = 'https://codepen.io/yuanchuan/full/wZJqNK'
+  const pitfall = 'https://codepen.io/dsenneff/full/RqYONv'
+  return <iframe style={{position:'absolute', top:'-62px'}} src={pitfall} width="100%" height="120%" frameBorder="0"/>
+}
 
 const randomArrValue = (arr) => 
   arr[
