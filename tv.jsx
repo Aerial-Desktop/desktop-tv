@@ -1,3 +1,4 @@
+import { spacexLiveChecker } from './videos.jsx'
 export const refreshFrequency = 5000 // ms
 
 export const className = `
@@ -19,7 +20,6 @@ export const render = () => {
   // news related
 
   // live news if online
-  const spacexLiveChecker = buildLiveChannelsUrl('UCtI0Hodo5o5dUb67FeUjDeA')
   const podcastLiveChecker = buildLiveChannelsUrl('UCzQUP1qoWDoEbmsQxvdjxgQ')
   const youtubeLiveNowTechnology = buildUrlPlaylist('PL57quI9usf_th5iJjjhXcRzlzibHUgYMA')
   const youtubeLiveNowAnimals = buildUrlPlaylist('PLIFqWCuxNyoj8HAwNYOlqdDL52pNsbvKV')
@@ -99,23 +99,23 @@ export const render = () => {
   // perform the playllist validation here.
 
   return (
-    // <iframe src={spacexLiveChecker} width="100%" height="100%" frameBorder="0"/>
+    <iframe src={spacexLiveChecker} width="100%" height="100%" frameBorder="0"/>
     // <iframe src={buildUrlPlaylist(lofiAnimes)} width="100%" height="100%" frameBorder="0"/>
     // <CodePen url={enterTheMatrix} />
     // <iframe src={buildUrlPlaylist(lofiAnimes)} width="100%" height="100%" frameBorder="0"/>
     // <iframe src={buildUrlPlaylist(lofiAnimes)} width="100%" height="100%" frameBorder="0"/>
-    <span>
-    {
-      randomArrayLength < accum1 ?
-        <CodePen url={ codePenArray[randomArrayLength] }/>
-      : randomArrayLength < accum2 ?
-        <iframe src={bestThreadMaps[randomArrayLength-accum1]} width="100%" height="100%" frameBorder="0"/>
-      : randomArrayLength < accum3 ?
-        <iframe src={videoExperienceList[randomArrayLength-accum2]} width="100%" height="100%" frameBorder="0"/>
-      :
-        <iframe src={youtubeList[randomArrayLength-accum3]} width="100%" height="100%" frameBorder="0"/>
-    }
-    </span>
+//     <span>
+//     {
+//       randomArrayLength < accum1 ?
+//         <CodePen url={ codePenArray[randomArrayLength] }/>
+//       : randomArrayLength < accum2 ?
+//         <iframe src={bestThreadMaps[randomArrayLength-accum1]} width="100%" height="100%" frameBorder="0"/>
+//       : randomArrayLength < accum3 ?
+//         <iframe src={videoExperienceList[randomArrayLength-accum2]} width="100%" height="100%" frameBorder="0"/>
+//       :
+//         <iframe src={youtubeList[randomArrayLength-accum3]} width="100%" height="100%" frameBorder="0"/>
+//     }
+//     </span>
   )
 }
 
