@@ -1,4 +1,4 @@
-import { randomArrValue, randomArrNumber, buildUrlPlaylist, buildLiveChannelsUrl, buildLiveVideo } from './helpers.jsx'
+import { randomArrValue, randomArrNumber, buildUrlPlaylist, buildLiveChannelsUrl, buildLiveVideo } from './helpers'
 
 export const video_experiences = {
   live_news_if_online : {
